@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Desierto</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <script src="./script.js"></script>
+    <!-- import the latest version of hydra synth-->
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script src="../p5.min.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+
+</head>
+  
+  <body>
+
+    <header>
+        <div class="header__navigation">
+      
+      <a href="./siete.html"><p id="p">GO BACK</p></a>
+      <div id="p">
+        <p onclick="playAud()" >PLAY TO SOUND</p>
+      </div>
+      <a href="./dos.html"><p id="p">GO FORWARD</p></a>
+          
+      
+      </div>
+      </header>
+
+      <audio autoplay loop id="maaudio">
+        <source src="./canciones/2.wav">
+      </audio>
+    
+    
+    
+    <script> 
+      let vid = document.getElementById("maaudio"); 
+      
+      function playAud() { 
+        vid.play(); 
+      } 
+      
+      function pauseAud() { 
+        vid.pause(); 
+      } 
+      </script> 
+
+    
+
+
+
+</script>
+
+</div>
+
+<audio autoplay>
+  <source src="./sonido/2.wav">
+</audio>
+    
+  <script>
+    const playSound = function() {
+        document.getElementById('audioelement').play();
+        document.removeEventListener('click', playSound);
+    }
+    document.addEventListener('click', playSound);
+    </script>
+    
+
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;z-index:3"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <canvas >
+    <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas"),
+        detectAudio: false,
+        enableStreamCapture: false,
+      })
+      s0.initVideo("https://va.media.tumblr.com/tumblr_s79q9hVotC1anffkk_720.mp4")
+src(s0).repeat(2).layer(src(o0).mask(shape(4,2).scale(0.5,0.7).scrollX([0.4,0.2,0.5]))
+.scrollX(0.001).shift(0,0,[0.001,0.01])).modulate(o0,0.001).out(o0)
+    </script>
+    </canvas>
+
+
+  </body>
+</html>

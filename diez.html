@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Desierto</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <script src="./script.js"></script>
+    <!-- import the latest version of hydra synth-->
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script src="../p5.min.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    
+
+</head>
+  
+  <body>
+
+    <header>
+        <div class="header__navigation">
+      
+      <a href="./siete.html"><p id="p">GO BACK</p></a>
+      <div id="p">
+        <p onclick="playAud()" >PLAY TO SOUND</p>
+      </div>
+      <a href="./ocho.html"><p id="p">GO FORWARD</p></a>
+          
+      
+      </div>
+      </header>
+
+      <audio autoplay loop id="maaudio">
+        <source src="./canciones/2.wav">
+      </audio>
+    
+    
+    
+    <script> 
+      let vid = document.getElementById("maaudio"); 
+      
+      function playAud() { 
+        vid.play(); 
+      } 
+      
+      function pauseAud() { 
+        vid.pause(); 
+      } 
+      </script> 
+
+    
+
+
+
+</script>
+
+</div>
+
+<audio autoplay>
+  <source src="./sonido/2.wav">
+</audio>
+    
+  <script>
+    const playSound = function() {
+        document.getElementById('audioelement').play();
+        document.removeEventListener('click', playSound);
+    }
+    document.addEventListener('click', playSound);
+    </script>
+    
+
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;z-index:3"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <canvas >
+    <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas"),
+        detectAudio: false,
+        enableStreamCapture: false,
+      })
+      height = window.innerHeight*0.07
+
+p5 = new P5();
+
+p5.draw = () => {
+  p5.background(250,250,250);
+  p5.fill(0,0,0);
+  p5.textSize(height);
+  p5.textLeading(height * 1.5);
+  p5.textFont("serif");
+  p5.text("The twisting of the largest cables, the rolling, hammering, and cutting large masses of iron, the draining of our mines, the rolling, hammering, and cutting large masses of iron, the draining of our mines, the twisting of the largest cables, the rolling, hammering, and cutting, the draining, the twisting, the twisting of the largest cables, the rolling, hammering, and cutting large masses of iron, the draining of our mines", 5, 100, p5.windowWidth, p5.windowHeight);
+} // Words: Charles Babbage
+
+p5.hide();
+
+s0.init({ src: p5.canvas });
+
+o = () => osc(22,0.02,0).posterize(8).thresh(0.5)
+txt = () => src(s0)
+txt().scrollX(0.1,-0.011).mask(o())
+  .add(txt().scrollX(0.1,0.012).mask(o().invert(1)))
+.layer(src(o0).mask(o().diff(o().rotate(Math.PI*0.25)).scale(0.75),0.01))
+.out(o0);
+    </script>
+    </canvas>
+
+
+  </body>
+</html>

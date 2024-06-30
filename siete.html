@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kaleidoscopio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <script src="./script.js"></script>
+    <!-- import the latest version of hydra synth-->
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script src="../p5.min.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+  </head>
+  <body>
+
+    
+    <header>
+        <div class="header__navigation">
+      
+      <a href="./cinco.html"><p id="p">GO BACK</p></a>
+      <div id="p">
+        <p onclick="playAud()" >PLAY TO SOUND</p>
+      </div>
+      <a href="./ocho.html"><p id="p">GO FORWARD</p></a>
+          
+      
+      </div>
+      </header>
+
+      <audio autoplay loop id="miaudio">
+        <source src="./canciones/Monstrua Valentine (1).wav">
+      </audio>
+    
+    
+    
+    <script> 
+      let vid = document.getElementById("miaudio"); 
+      
+      function playAud() { 
+        vid.play(); 
+      } 
+      
+      function pauseAud() { 
+        vid.pause(); 
+      } 
+      </script> 
+
+    
+
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;z-index:3"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <canvas >
+    <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas"),
+        detectAudio: false,
+        enableStreamCapture: false,
+      })
+      speed = 0.1
+s0.initVideo("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWI2Z3F2MDNxOW43Mmg0ZHE3ZWx4cjB6NmNmaGJvZzJpa2Y4Y2ZyMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RTZSVfnTmJ7eZEb8j0/giphy.mp4")
+src(s0)
+.rotate(() => Math.PI * mouse.x /180)
+.repeatX(1)
+.repeatY(()=>Math.sin(time)*2)
+.scale(() => Math.PI/4)
+.modulate(osc(.2, 0,.4).color(1,2,0))
+.kaleid(2).saturate(1.2).out(o0)
+
+
+render(o0)
+    </script>
+    </canvas>
+
+
+  </body>
+</html>
