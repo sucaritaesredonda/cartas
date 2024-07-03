@@ -3,7 +3,7 @@ const playSound = function() {
     element.setAttribute('style', 'display: none');
     element.innerHTML = `
       <audio autoplay loop>
-        <source src="./canciones/monster geometrico.mp3">
+        <source src="./canciones/mostruo geometrico.wav">
       </audio>
     `;
     document.body.appendChild(element);
